@@ -1,19 +1,15 @@
 /* stylelint-disable % */
 /* stylelint-disable unit-allowed-list */
+
+/* Body */
+
 body {
     margin: 3rem;
     background-color: #C2FF85;
     font-family: 'Roboto', monospace, sans-serif;
 }
 
-h1 {
-    font-size: 3rem;
-    margin-bottom: 0%;
-}
-
-h2 {
-    font-size: 2rem;
-}
+/* Header */
 
 header > img {
     display: block;
@@ -23,6 +19,8 @@ header > img {
     height: auto;
     padding-bottom: 1rem;
 }
+
+/* Nav Bar */
 
 nav ul {
     list-style: none;
@@ -57,6 +55,8 @@ nav li a {
     font-size: 1rem;
 }
 
+/* Main Section */
+
 section {
     display: flex;
     justify-content: center;
@@ -66,6 +66,15 @@ section {
 .main-article {
     background-image: url(images/italianfood.jpg);
     background-position: center;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 0%;
+}
+
+h2 {
+    font-size: 2rem;
 }
 
 p {
@@ -106,6 +115,8 @@ article {
     border-radius: 1rem;
 }
 
+/* Animations */
+
 @keyframes italian {
     0%   {background-color: #008C45;}
     50%  {background-color: #F4F9FF;}
@@ -139,6 +150,8 @@ article {
     animation-timing-function: ease;
     animation-duration: 10s;
 }
+
+/* Footer section */
 
 footer {
     display: flex;
