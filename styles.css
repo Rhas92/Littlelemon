@@ -1,3 +1,5 @@
+/* stylelint-disable % */
+/* stylelint-disable unit-allowed-list */
 body {
     margin: 3rem;
     background-color: #C2FF85;
@@ -14,10 +16,8 @@ h2 {
 
 header > img {
     display: block;
-    /* stylelint-disable-next-line unit-allowed-list */
-    max-width: 100%;
-    /* stylelint-disable-next-line unit-allowed-list */
-    max-height: 100%;
+    max-width: 80%;
+    max-height: 80%;
     width: auto;
     height: auto;
     padding-bottom: 1rem;
@@ -25,9 +25,7 @@ header > img {
 
 nav ul {
     list-style: none;
-    /* stylelint-disable-next-line unit-allowed-list */
     max-width:100%;
-    /* stylelint-disable-next-line unit-allowed-list */
     max-height:100%;
     width: auto;
     height: auto;
@@ -37,7 +35,7 @@ nav ul {
 }
 
 nav li {
-    border-color: black;
+    border-color: #000000;
     background-color: #F6B860;
     border-style: solid;
     margin: 1rem;
@@ -60,20 +58,22 @@ section {
 article {
     display: flex;
     flex: 1;
+    flex-direction: column;
     flex-wrap: wrap;
     background-color: #F6B860;
-    border: #000000 solid .25rem;
+    border: #000000 solid 0.25rem;
     padding: 2rem;
     border-radius: 1rem;
-    /* stylelint-disable-next-line unit-allowed-list */
     max-width:100%;
-    /* stylelint-disable-next-line unit-allowed-list */
     max-height:100%;
     width: auto;
     height: auto;
     margin: 1rem;
 }
 
+p {
+    text-align: justify;
+}
 
 footer {
     display: flex;
@@ -89,4 +89,13 @@ footer img {
 
 footer > div {
     margin-right: 2rem
+}
+
+
+.article-image {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    border-radius: 1rem;
 }
