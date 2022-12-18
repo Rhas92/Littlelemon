@@ -8,6 +8,7 @@ body {
 
 h1 {
     font-size: 3rem;
+    margin-bottom: 0%;
 }
 
 h2 {
@@ -25,8 +26,8 @@ header > img {
 
 nav ul {
     list-style: none;
-    max-width:100%;
-    max-height:100%;
+    max-width: 80%;
+    max-height: 80%;
     width: auto;
     height: auto;
     display: flex;
@@ -36,16 +37,23 @@ nav ul {
 
 nav li {
     border-color: #000000;
-    background-color: #F6B860;
+    background-image: url(images/lemons.jpg);
     border-style: solid;
     margin: 1rem;
     padding: 1rem 15rem 1rem 1rem;
     border-radius: 1rem;
+
+}
+
+nav li:hover{
+    transform: rotateY(360deg);
+    transition: 3s;
 }
 
 nav li a {
     color: #040404;
-    text-decoration: solid underline;
+    text-decoration: underline;
+    font-weight: 900;
     font-size: 1rem;
 }
 
@@ -53,6 +61,25 @@ section {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+}
+
+.main-article {
+    background-image: url(images/italianfood.jpg);
+    background-position: center;
+}
+
+p {
+    text-align: justify;
+}
+
+.main-article p {
+    border-color: #000000;
+    background-color: #F6B860;
+    border-style: solid;
+    padding: 1rem;
+    border-radius: 1rem;
+    display: flex;
+    max-width: 75%;
 }
 
 article {
@@ -71,8 +98,46 @@ article {
     margin: 1rem;
 }
 
-p {
-    text-align: justify;
+.article-image {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    border-radius: 1rem;
+}
+
+@keyframes italian {
+    0%   {background-color: #008C45;}
+    50%  {background-color: #F4F9FF;}
+    100% {background-color: #CD212A;}
+}
+
+#italian:hover {
+    animation-name: italian;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes turkish {
+    0%   {background-image: url(images/turkishflag);}
+    100% {background-image: url(images/turkishflag);}
+}
+
+#turkish:hover {
+    animation-name: turkish;
+    animation-duration: 10s;
+    animation-timing-function: ease;
+}
+
+@keyframes greek {
+    0%   {background-image: url(images/Flag_of_Greece.svg.png);}
+    100% {background-image: url(images/Flag_of_Greece.svg.png);}
+}
+
+#greek:hover {
+    animation-name: greek;
+    animation-timing-function: ease;
+    animation-duration: 10s;
 }
 
 footer {
@@ -92,10 +157,4 @@ footer > div {
 }
 
 
-.article-image {
-    max-width: 100%;
-    max-height: 100%;
-    width: auto;
-    height: auto;
-    border-radius: 1rem;
-}
+
