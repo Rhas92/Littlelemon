@@ -3,8 +3,8 @@ body {
     margin-bottom: 3rem;
     margin-left: 5%;
     margin-right: 5%;
-    background-color: rgb(150, 230, 150);
-    font-family: 'Roboto', monospace, sans-serif;
+    background-color: #C2FF85;
+    font-family: 'Roboto', monospace, sans-serif;w
 }
 
 h1 {
@@ -19,8 +19,9 @@ header > img {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 50rem;
+    width: 40rem;
     height: auto;
+    padding-bottom: 1rem;
 }
 
 nav ul {
@@ -28,15 +29,14 @@ nav ul {
     text-align: center;
     display: flex;
     justify-content: center;
-    background-color: rgb(150, 206, 220);
 }
 
 nav li {
     display: inline-block;
     border-color: black;
-    background-color: rgb(150, 230, 150);
+    background-color: #F6B860;
     border-style: solid;
-    margin: 2rem;
+    margin: 1rem;
     padding: 1rem 15rem 1rem 1rem;
     text-align: center;
 }
@@ -44,7 +44,7 @@ nav li {
 nav li a {
     color: rgb(4, 4, 4);
     text-decoration: solid underline;
-    font-size: 1.5rem;
+    font-size: 1rem;
 }
 
 section {
