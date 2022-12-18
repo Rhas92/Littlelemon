@@ -30,46 +30,67 @@ nav ul {
     max-height:100%;
     width: auto;
     height: auto;
-    align-self: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 nav li {
-    display: inline-block;
     border-color: black;
     background-color: #F6B860;
     border-style: solid;
     margin: 1rem;
     padding: 1rem 15rem 1rem 1rem;
+    border-radius: 1rem;
 }
 
 nav li a {
-    color: rgb(4, 4, 4);
+    color: #040404;
     text-decoration: solid underline;
     font-size: 1rem;
 }
 
 section {
     display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 article {
+    display: flex;
     flex: 1;
     flex-wrap: wrap;
-    justify-content: flex-start;
-    max-width: 70%;
-    max-height: 70%;
-    margin-left: 2rem;
-    margin-right: auto;
+    background-color: #F6B860;
+    border: #000000 solid .25rem;
+    padding: 2rem;
+    border-radius: 1rem;
+    max-width:100%;
+    max-height:100%;
+    width: auto;
+    height: auto;
+}
+
+.primary {
+    margin: 1rem;
+}
+
+.secondary {
+    margin: 1rem;
 }
 
 
 footer {
     display: flex;
     align-items: center;
+    margin: 1rem;
 }
 
 footer img {
     display: block;
     width: 3rem;
     height: auto;
+}
+
+footer > div {
+    margin-right: 2rem
 }
