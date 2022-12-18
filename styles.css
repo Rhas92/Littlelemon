@@ -1,8 +1,5 @@
 body {
-    margin-top: 3rem;
-    margin-bottom: 3rem;
-    margin-left: 5%;
-    margin-right: 5%;
+    margin: 3rem;
     background-color: #C2FF85;
     font-family: 'Roboto', monospace, sans-serif;
 }
@@ -17,8 +14,10 @@ h2 {
 
 header > img {
     display: block;
-    max-width:80%;
-    max-height:80%;
+    /* stylelint-disable-next-line unit-allowed-list */
+    max-width: 100%;
+    /* stylelint-disable-next-line unit-allowed-list */
+    max-height: 100%;
     width: auto;
     height: auto;
     padding-bottom: 1rem;
@@ -26,7 +25,9 @@ header > img {
 
 nav ul {
     list-style: none;
+    /* stylelint-disable-next-line unit-allowed-list */
     max-width:100%;
+    /* stylelint-disable-next-line unit-allowed-list */
     max-height:100%;
     width: auto;
     height: auto;
@@ -64,17 +65,12 @@ article {
     border: #000000 solid .25rem;
     padding: 2rem;
     border-radius: 1rem;
+    /* stylelint-disable-next-line unit-allowed-list */
     max-width:100%;
+    /* stylelint-disable-next-line unit-allowed-list */
     max-height:100%;
     width: auto;
     height: auto;
-}
-
-.primary {
-    margin: 1rem;
-}
-
-.secondary {
     margin: 1rem;
 }
 
