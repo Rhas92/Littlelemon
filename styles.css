@@ -3,7 +3,8 @@ body {
     margin-bottom: 3rem;
     margin-left: 5%;
     margin-right: 5%;
-    background-color: rgb(160, 180, 166);
+    background-color: rgb(150, 230, 150);
+    font-family: roboto, monospace, sans-serif;
 }
 
 h1 {
@@ -25,16 +26,29 @@ header > img {
 nav ul {
     list-style: none;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(150, 206, 220);
 }
 
 nav li {
     display: inline-block;
+    border-color: black;
+    background-color: rgb(150, 230, 150);
+    border-style: solid;
+    margin: 2rem;
+    padding: 1rem 15rem 1rem 1rem;
+    text-align: center;
+}
+
+nav li a {
+    color: rgb(4, 4, 4);
+    text-decoration: solid underline;
+    font-size: 1.5rem;
 }
 
 section {
-
     display: flex;
-
 }
 
 article {
@@ -43,10 +57,11 @@ article {
 
 footer {
     display: flex;
+    align-items: center;
 }
 
 footer img {
     display: block;
-    width: 10rem;
+    width: 3rem;
     height: auto;
 }
